@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Git Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h2>Github Demo using Github Desktop</h2>
+
+        <h3>Creating a local repo and uploading it to Github</h3>
+        <ol>
+            <li>Open up Github Desktop</li>
+            <li>Create new repository
+                <ul>
+                    <li>Find an area where you want to place the repository locally (documents, desktop, etc...)</li>
+                </ul> 
+            </li>
+            <li>If you already have an existing repository...
+                <ul>
+                    <li>If you already have an existing repository, you can use that by "adding existing  repository"</li>
+                    <li>Or... you can clone an repository down from Github</li>
+                </ul>
+            </li>
+            <li>Publish Repo to Github (yours) 
+                <ul>
+                    <li>Go to github and you should see your new repo.</li>
+                </ul>
+            </li>
+            <li>Open your Repo in your IDE of choice.</li>
+            <li>Add in a framework/project files
+                <ul>
+                    <li>for example: index.html, css, img, etc...</li>
+                </ul>
+            </li>
+            <li>To upload your work to Github, go back to the Github Desktop and commit your work. If you refresh, you see your uploaded files.</li>
+        </ol>
+
+        <h3>Cloning From Github</h3>
+        <p>Let's say that you accidently deleted your local repo of your work, but thankfully you saved it on up on Github.</p>
+        <ol>
+            <li>Open up Github desktop, go to Current Repository tab and under the "Add" dropdown click "Clone Repository"</li>
+            <li>Select the Repository you want to clone and secondly, find an area where you want to repo to live on your locally on your computer.
+                <img src="assets/img/clone-repo.jpg" alt="clone repo"/>
+            </li>
+            <li>Once your project has been cloned, open up in your IDE and work away! </li>
+        </ol>
+
+        <h3>Branching &amp; Merging</h3>
+        <p>Whether you are working on team or individually, it's a good idea to have multiple copies of your project. This way you are not committed to one idea, and you don't have to hit "ctrl z" a ton of times! Branching (creating copies) gives the ability to have mulitple copies of your project, without committing the master branch (the original repo), but it is important to know what branch you are on</p>
+
+        <h4>Git Configuration</h4>
+        <p>Before creating branches, it's always a good idea to assign an author name, this way you and team know what's been done by who</p>
+        <ul>
+            <li>To Set this up using command line:</li>
+            <li>Git config --global user.name "your name"</li>
+            <li>Git config -- global user.email "your email"</li>
+            <li>To set this up using Github Desktop:</li>
+            <li>Find where preferences is located and open it. You will see an area for 'Git', the "name and email config settings are there.
+                <img src="assets/img/pref-git-config.jpg" alt="git configuration" />
+            </li>
+        </ul>
+        <h4>Creating a Branch</h4>
+        <ol>
+            <li>Before creating a branch, we want to see if there any branches first. We can do that by looking at the middle tab (Current Branch). You should only see a "main branch"
+                <img src="assets/img/current-branch.jpg" alt="current branch"/>
+            </li>
+            <li>Create a new branch. Click the "New Branch" button, name your branch.
+                <img src="assets/img/create-branch.jpg" alt="create branch"/>
+            </li>
+        </ol>
+    </body>
+</html>
