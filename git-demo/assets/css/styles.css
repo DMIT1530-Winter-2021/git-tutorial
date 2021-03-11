@@ -1,0 +1,95 @@
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+p { 
+    margin-bottom: 1.5rem;
+}
+
+.git-info {
+    margin: 3rem 0;
+}
+.git-info > section {
+    padding: 3rem 1rem;
+}
+
+.git-info > section:nth-child(even) {
+    background:lightcyan;
+}
+.git-info > section:nth-child(odd) {
+    background: lightgrey;
+}
+
+.git-info > section:last-of-type > div {
+    padding: 2rem 0;
+}
+
+/* list items **/
+ol li {
+    margin-bottom: 1.5rem;
+}
+ol li:last-of-type {
+    margin-bottom: 0;
+}
+ol li > img,
+ul li > img {
+    margin-top: 1rem;
+    max-width: 90%;
+}
+
+ol li ul li {
+    margin-bottom: 0;
+    list-style-type: disc;
+}
+
+/** git config - naming **/
+.git-config ul {
+    padding: 0;
+    margin: 0;
+}
+.git-config ul li {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 62em) {
+    .inner-container {
+        max-width: 62rem;
+        margin: auto;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    h3 {
+        margin-bottom: 3rem;
+    }
+    p, li {
+        width: 75ch;
+    }
+    ol li > img, 
+    ul li > img {
+        max-width: 60%;
+    }
+}
